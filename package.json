@@ -4,7 +4,9 @@
   "description": "This project is the third advanced JavaScript Project within the Odin Project's curriculum. In this porject I will display use of advanced DOM manipulation, JavaScript classes, ES6 modules, and webpack.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
