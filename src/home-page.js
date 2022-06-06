@@ -40,5 +40,5 @@ function domSetup() {
 
     main.appendChild(title);
     hero.appendChild(main);
-    content.appendChild(header, hero);
+    content.append(header, hero);
 }

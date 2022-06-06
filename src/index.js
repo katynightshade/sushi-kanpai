@@ -1,1 +1,3 @@
-console.log('Not there yet');
+import domSetup from './home-page.js';
+
+domSetup();
