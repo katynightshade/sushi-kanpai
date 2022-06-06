@@ -26,7 +26,7 @@ function domSetup() {
         p1.classList.add('p1');
         teamMember.classList.add('team-member');
         teamPic.classList.add('team-pic');
-        p1.appendChild(teamMember, teamPic);
+        p1.append(teamMember, teamPic);
         main.appendChild(p1);
     }
     
@@ -36,9 +36,11 @@ function domSetup() {
     navList.classList.add('nav-list');
     logo.appendChild(logoImg);
     navList.appendChild(navUL);
-    header.appendChild(logo, navList);
+    header.appendChild(logo);
 
     main.appendChild(title);
     hero.appendChild(main);
-    content.append(header, hero);
+    content.appendChild(header);
+    content.appendChild(hero);
 }
+domSetup();
