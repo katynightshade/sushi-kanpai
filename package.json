@@ -1,0 +1,24 @@
+{
+  "name": "sushi-kanpai",
+  "version": "1.0.0",
+  "description": "This project is the third advanced JavaScript Project within the Odin Project's curriculum. In this porject I will display use of advanced DOM manipulation, JavaScript classes, ES6 modules, and webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katynightshade/sushi-kanpai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katynightshade/sushi-kanpai/issues"
+  },
+  "homepage": "https://github.com/katynightshade/sushi-kanpai#readme",
+  "devDependencies": {
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
