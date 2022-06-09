@@ -1,7 +1,7 @@
 export function domSetup() {
-    const content = document.getElementById('content');
+    const content = document.querySelector('#content');
     
-    const header = document.createElement('header');
+    const header = document.createElement('div');
 
     const logo = document.createElement('div');
     logo.innerHTML = '<img src="../src/img/logo.png" alt="Kanpai Home">'
@@ -15,9 +15,11 @@ export function domSetup() {
     li1.innerHTML = '<a href="#">Menu</a>';
     li2.innerHTML = '<a href="#">Contact</a>';
     li3.innerHTML = '<a href="#">Yelp</a>';
-    navUL.appendChild(li1, li2, li3);
+    navUL.append(li1, li2, li3);
     navList.appendChild(navUL);
     header.appendChild(navList);
+
+    
     
     const hero = document.createElement('div');
     const main = document.createElement('div');
@@ -37,5 +39,5 @@ export function domSetup() {
     }
     
     content.appendChild(header);
+    return content;
 }
-domSetup();

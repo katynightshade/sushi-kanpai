@@ -1,1 +1,3 @@
-import './home-page.js';
+import {content} from './home-page.js';
+
+content;
