@@ -1,3 +1,3 @@
-import {domSetup} from './home-page.js';
+import {domSetup} from './website.js';
 
 domSetup();
