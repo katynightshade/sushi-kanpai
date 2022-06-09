@@ -1,6 +1,3 @@
-import Chef from './img/chef1.png';
-import Logo from './img/logo.png';
-
 export function domSetup() {
     const content = document.querySelector('#content');
     
@@ -38,9 +35,9 @@ export function domSetup() {
     tm1.classList.add('team-member'), tm2.classList.add('team-member'), tm3.classList.add('team-member'), tm4.classList.add('team-member');
 
 
-    const tp1 = document.createElement('img'), tp2 = document.createElement('img'), tp3 = document.createElement('img'), tp4 = document.createElement('img');
+    const tp1 = document.createElement('div'), tp2 = document.createElement('div'), tp3 = document.createElement('div'), tp4 = document.createElement('div');
+    tp1.innerHTML = '<img src="../src/img/chef1.jpg" alt="Employee">', tp2.innerHTML = '<img src="../src/img/chef1.jpg" alt="Employee">', tp3.innerHTML = '<img src="../src/img/chef1.jpg" alt="Employee">', tp4.innerHTML = '<img src="../src/img/chef1.jpg" alt="Employee">';
     tp1.classList.add('team-pic'), tp2.classList.add('team-pic'), tp3.classList.add('team-pic'), tp4.classList.add('team-pic');
-    tp1.src = Chef, tp2.src = Chef, tp3.src = Chef, tp4.src = Chef;
 
     p1.append(tm1, tp1);
     p2.append(tm2, tp2);
