@@ -2,6 +2,7 @@ export function domSetup() {
     const content = document.querySelector('#content');
     
     const header = document.createElement('div');
+    header.classList.add('header');
 
     const logo = document.createElement('div');
     logo.innerHTML = '<img src="../src/img/logo.png" alt="Kanpai Home">'
