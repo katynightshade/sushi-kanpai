@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+:root {
+    --main-color: #333;
+}
+
+#content {
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+.header {
+    grid-row: 1 / 2;
+}
+
+.hero {
+    grid-row: 2 / 3;
+    overflow: auto;
+}
+
+footer {
+    grid-row: 3 / 4;
+}

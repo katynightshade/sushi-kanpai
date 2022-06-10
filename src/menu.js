@@ -1,3 +1,5 @@
+import '../dist/style.css';
+
 export function menuSetup() {
     const content = document.querySelector('#content');
     
