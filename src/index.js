@@ -1,3 +1,3 @@
-import {domSetup} from './website.js';
+import {menuSetup} from './website.js';
 
-domSetup();
+menuSetup();

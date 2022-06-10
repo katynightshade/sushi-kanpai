@@ -16,6 +16,7 @@ export function domSetup() {
     li1.innerHTML = '<a href="#">Menu</a>';
     li2.innerHTML = '<a href="#">Contact</a>';
     li3.innerHTML = '<a href="#">Yelp</a>';
+    li1.classList.add('list-item'), li2.classList.add('list-item'), li3.classList.add('list-item');
     navUL.append(li1, li2, li3);
     navList.appendChild(navUL);
     header.appendChild(navList);
@@ -23,9 +24,12 @@ export function domSetup() {
     
     
     const hero = document.createElement('div');
+    hero.classList.add('hero');
     const main = document.createElement('div');
+    main.classList.add('main');
     const title = document.createElement('p');
     title.textContent = 'Meet Our Team!'
+    title.classList.add('title');
     main.appendChild(title);
 
     const p1 = document.createElement('div'), p2 = document.createElement('div'), p3 = document.createElement('div'), p4 = document.createElement('div');
@@ -48,6 +52,16 @@ export function domSetup() {
     main.append(p1, p2, p3, p4);
     hero.appendChild(main);
     
-    content.appendChild(header);
-    content.appendChild(hero);
+    const footer = document.createElement('footer');
+    const fname = document.createElement('div');
+    fname.classList.add('footer-name');     
+    const code = document.createElement('div');
+    code.classList.add('code-link');
+
+    fname.textContent = 'Katy Nightshade 2022';
+    code.innerHTML = '<p><a href="https://github.com/katynightshade/sushi-kanpai">GitHub</a></p>';
+
+    footer.append(fname, code);
+
+    content.append(header, hero, footer);
 }
