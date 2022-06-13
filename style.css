@@ -1,23 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
-:root {
-    --main-color: #333;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-width: 100vw;
 }
 
 #content {
     display: grid;
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 15vh 78vh 7vh;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .header {
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.logo {
+    grid-column: 1 / 2;
+}
+
+.logo > img {
+    max-height: 15vh;
+    max-width: 50vw;
+}
+
+.nav-ul {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    font-size: 1.3vh;
+}
+
+.site-nav {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.site-nav:hover {
+    transform: scale(1.5);
+}
+
+#home {
+    grid-column: 2 / 3;
+}
+
+#menu {
+    grid-column: 3 / 4;
+}
+
+#contact {
+    grid-column: 4 / 5;
 }
 
 .hero {
     grid-row: 2 / 3;
     overflow: auto;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(../src/img/sushi-bkg.jpg);
+    background-size: auto 100%;
+}
+
+.main {
+    margin: 5% 15%;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+.title {
+    color: azure;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.team-member {
+    color: azure;
+    font-size: 20px;
+    text-align: center;
+}
+
+.team-pic {
+    display: flex;
+    justify-content: center;
+}
+
+.team-pic > img {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 50%;
 }
 
 footer {
     grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.code-link {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (min-width: 600px) {
+    .nav-ul {
+        font-size: 2vh;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .hero {
+        background-size: 100% auto;
+    }
 }
