@@ -1,3 +1,3 @@
-import {contactSetup} from './website.js';
+import {onStartUp} from './website.js';
 
-contactSetup();
+onStartUp();

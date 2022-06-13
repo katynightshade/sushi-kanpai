@@ -1,29 +1,7 @@
 import '../dist/style.css';
 
-export function domSetup() {
-    const content = document.querySelector('#content');
-    
-    const header = document.createElement('div');
-    header.classList.add('header');
-
-    const logo = document.createElement('div');
-    logo.innerHTML = '<img src="../src/img/logo.png" alt="Kanpai Home">'
-    logo.classList.add('logo');    
-    header.appendChild(logo);
-
-    const navList = document.createElement('div');
-    navList.classList.add('nav-list');
-    const navUL = document.createElement('ul');
-    const li1 = document.createElement('li'), li2 = document.createElement('li'), li3 = document.createElement('li');
-    li1.innerHTML = '<a href="#">Menu</a>';
-    li2.innerHTML = '<a href="#">Contact</a>';
-    li3.innerHTML = '<a href="#">Yelp</a>';
-    li1.classList.add('list-item'), li2.classList.add('list-item'), li3.classList.add('list-item');
-    navUL.append(li1, li2, li3);
-    navList.appendChild(navUL);
-    header.appendChild(navList);
-
-    
+export function homeSetup() {
+    const content = document.querySelector('#content');    
     
     const hero = document.createElement('div');
     hero.classList.add('hero');
@@ -65,5 +43,5 @@ export function domSetup() {
 
     footer.append(fname, code);
 
-    content.append(header, hero, footer);
+    content.append(hero, footer);
 }
