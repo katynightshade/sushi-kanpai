@@ -1,7 +1,8 @@
 import '../dist/style.css';
 
-export function contactSetup() {
-    const content = document.querySelector('#content');
+function contactSetup() {
+    const bodyContent = document.createElement('div');
+    bodyContent.classList.add('body-div');
 
     const hero = document.createElement('div');
     hero.classList.add('hero');
@@ -40,5 +41,13 @@ export function contactSetup() {
 
     footer.append(fname, code);
 
-    content.append(hero, footer);
+    bodyContent.append(hero, footer);
+
+    return bodyContent;
+}
+
+export function contact() {
+    const container = document.querySelector('#container');
+    container.textContent = '';
+    container.appendChild(contactSetup());
 }

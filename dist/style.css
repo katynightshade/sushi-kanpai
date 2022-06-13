@@ -3,13 +3,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     max-width: 100vw;
 }
 
 #content {
     display: grid;
-    grid-template-rows: 15vh 78vh 7vh;
+    grid-template-rows: 15vh 85vh;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
@@ -58,8 +58,14 @@ html, body {
     grid-column: 4 / 5;
 }
 
-.hero {
+.body-content {
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 78vh 7vh;
+}
+
+.hero {
+    grid-row: 1 / 2;
     overflow: auto;
     background: linear-gradient(
         rgba(0, 0, 0, 0.5),
@@ -110,7 +116,7 @@ html, body {
 }
 
 footer {
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     display: flex;
     justify-content: center;
     align-items: center;

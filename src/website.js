@@ -1,10 +1,8 @@
-import {homeSetup} from './home-page.js';
-import {menuSetup} from './menu.js';
-import {contactSetup} from './contact.js';
+import {home} from './home-page.js';
+import {menu} from './menu.js';
+import {contact} from './contact.js';
 
 function createNav() {
-    const content = document.querySelector('#content');
-    
     const header = document.createElement('div');
     header.classList.add('header');
 
@@ -25,7 +23,7 @@ function createNav() {
     homeBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveButton(homeBtn);
-        homeSetup();
+        home();
     });
     
     const menuBtn = document.createElement('li');
@@ -35,7 +33,7 @@ function createNav() {
     menuBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveButton(menuBtn);
-        menuSetup();
+        menu();
     });
 
     const contactBtn = document.createElement('li');
@@ -45,14 +43,13 @@ function createNav() {
     contactBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveButton(contactBtn);
-        contactSetup();
+        contact();
     });
     
     navUL.append(homeBtn, menuBtn, contactBtn);
     navList.appendChild(navUL);
     header.appendChild(navList);
 
-    content.appendChild(header);
     return header;
 }
 
@@ -68,7 +65,18 @@ function setActiveButton(button) {
     button.classList.add("active");
 }
 
+function mainContent() {
+    const container = document.createElement('div');
+    container.setAttribute('id', 'container');
+    return container;
+}
+
 export function onStartUp() {
-    createNav();
-    homeSetup();
+    const content = document.querySelector('#content');
+
+    content.appendChild(createNav());
+    content.appendChild(mainContent());
+
+    setActiveButton(document.querySelector('.site-nav'));
+    home();
 }

@@ -1,13 +1,13 @@
 import '../dist/style.css';
 
-export function menuSetup() {
-    const content = document.querySelector('#content');
+function menuSetup() {
+    const bodyContent = document.createElement('div');
+    bodyContent.classList.add('body-div');
 
     const hero = document.createElement('div');
     hero.classList.add('hero');
     const main = document.createElement('div');
     main.classList.add('main');
-    //create dom elements for menu items, append all to content
     const title = document.createElement('p');
     title.classList.add('menu-titles');
     main.appendChild(title);
@@ -33,5 +33,13 @@ export function menuSetup() {
 
     footer.append(fname, code);
 
-    content.append(hero, footer);
+    bodyContent.append(hero, footer);
+
+    return bodyContent;
+}
+
+export function menu() {
+    const container = document.querySelector('#container');
+    container.textContent = '';
+    container.appendChild(menuSetup());
 }

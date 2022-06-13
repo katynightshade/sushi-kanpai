@@ -1,8 +1,9 @@
 import '../dist/style.css';
 
-export function homeSetup() {
-    const content = document.querySelector('#content');    
-    
+function homeSetup() {
+    const bodyContent = document.createElement('div');
+    bodyContent.classList.add('body-div');
+
     const hero = document.createElement('div');
     hero.classList.add('hero');
     const main = document.createElement('div');
@@ -46,5 +47,13 @@ export function homeSetup() {
 
     footer.append(fname, code);
 
-    content.append(hero, footer);
+    bodyContent.append(hero, footer);
+
+    return bodyContent;
+}
+
+export function home() {
+    const container = document.querySelector('#container');
+    container.textContent = '';
+    container.appendChild(homeSetup());
 }
