@@ -1,3 +1,3 @@
-import {menuSetup} from './website.js';
+import {contactSetup} from './website.js';
 
-menuSetup();
+contactSetup();
