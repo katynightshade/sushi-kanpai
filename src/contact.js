@@ -31,6 +31,7 @@ function contactSetup() {
     hero.appendChild(main);
 
     const footer = document.createElement('footer');
+    footer.classList.add('footer');
     const fname = document.createElement('div');
     fname.classList.add('footer-name');     
     const code = document.createElement('div');
