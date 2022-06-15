@@ -9,7 +9,7 @@ html, body {
 
 #content {
     display: grid;
-    grid-template-rows: 15vh 85vh;
+    grid-template-rows: 15vh 78vh 7vh;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
@@ -60,15 +60,6 @@ html, body {
 
 #container {
     grid-row: 2 / 3;
-}
-
-.body-content {
-    display: grid;
-    grid-template-rows: 78vh 7vh;
-}
-
-.hero {
-    grid-row: 1 / 2;
     overflow: auto;
     background: linear-gradient(
         rgba(0, 0, 0, 0.5),
@@ -76,6 +67,8 @@ html, body {
       ), url(../src/img/sushi-bkg.jpg);
     background-size: auto 100%;
 }
+
+
 
 .main {
     margin: 5% 15%;
@@ -120,7 +113,7 @@ html, body {
 }
 
 .footer {
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     display: flex;
     justify-content: center;
     align-items: center;
