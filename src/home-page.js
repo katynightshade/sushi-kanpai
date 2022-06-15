@@ -1,11 +1,9 @@
 import '../dist/style.css';
 
 function homeSetup() {
-    const bodyContent = document.createElement('div');
-    bodyContent.classList.add('body-div');
-
     const hero = document.createElement('div');
     hero.classList.add('hero');
+
     const main = document.createElement('div');
     main.classList.add('main');
     const title = document.createElement('p');
@@ -35,22 +33,10 @@ function homeSetup() {
     p4.append(tm4, tp4);
 
     main.append(p1, p2, p3, p4);
-    hero.appendChild(main);
     
-    const footer = document.createElement('footer');
-    footer.classList.add('footer');
-    const fname = document.createElement('div');
-    fname.classList.add('footer-name');     
-    const code = document.createElement('div');
+    hero.appendChild(main);
 
-    fname.textContent = 'Katy Nightshade 2022';
-    code.innerHTML = '<p><a href="https://github.com/katynightshade/sushi-kanpai" class="code-link">GitHub</a></p>';
-
-    footer.append(fname, code);
-
-    bodyContent.append(hero, footer);
-
-    return bodyContent;
+    return hero;
 }
 
 export function home() {

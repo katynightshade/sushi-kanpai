@@ -1,11 +1,9 @@
 import '../dist/style.css';
 
 function menuSetup() {
-    const bodyContent = document.createElement('div');
-    bodyContent.classList.add('body-div');
-
     const hero = document.createElement('div');
     hero.classList.add('hero');
+
     const main = document.createElement('div');
     main.classList.add('main');
     const title = document.createElement('p');
@@ -20,23 +18,10 @@ function menuSetup() {
     m5.innerHTML = '<img src="../src/img/combos.jpg" alt="Sushi Combos/Nigiri">';
     m6.innerHTML = '<img src="../src/img/kids.jpg" alt="Kids Menu/Desserts">';
     main.append(m1, m2, m3, m4, m5, m6);
+
     hero.appendChild(main);
 
-    const footer = document.createElement('footer');
-    footer.classList.add('footer');
-    const fname = document.createElement('div');
-    fname.classList.add('footer-name');     
-    const code = document.createElement('div');
-    code.classList.add('code-link');
-
-    fname.textContent = 'Katy Nightshade 2022';
-    code.innerHTML = '<p><a href="https://github.com/katynightshade/sushi-kanpai">GitHub</a></p>';
-
-    footer.append(fname, code);
-
-    bodyContent.append(hero, footer);
-
-    return bodyContent;
+    return hero;
 }
 
 export function menu() {

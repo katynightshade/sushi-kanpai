@@ -71,11 +71,28 @@ function mainContent() {
     return container;
 }
 
+function createFooter() {
+    const footer = document.createElement('footer');
+    footer.classList.add('footer');
+    const fname = document.createElement('div');
+    fname.classList.add('footer-name');     
+    const code = document.createElement('div');
+    code.classList.add('code-link');
+
+    fname.textContent = 'Katy Nightshade 2022';
+    code.innerHTML = '<p><a href="https://github.com/katynightshade/sushi-kanpai">GitHub</a></p>';
+
+    footer.append(fname, code);
+
+    return footer;
+}
+
 export function onStartUp() {
     const content = document.querySelector('#content');
 
     content.appendChild(createNav());
     content.appendChild(mainContent());
+    content.appendChild(createFooter());
 
     setActiveButton(document.querySelector('.site-nav'));
     home();
