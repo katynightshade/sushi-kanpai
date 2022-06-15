@@ -8,6 +8,7 @@ function contactSetup() {
     main.classList.add('main');
     const title = document.createElement('p');
     title.classList.add('contact-title');
+    title.textContent = 'Contact Us!'
     main.appendChild(title);
     const grid = document.createElement('div');
     grid.classList.add('contact-grid');
@@ -26,7 +27,7 @@ function contactSetup() {
 
     grid.append(g1, g2);
     main.appendChild(grid);
-    
+
     hero.appendChild(main);
 
     return hero;
