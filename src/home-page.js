@@ -23,7 +23,7 @@ function homeSetup() {
 
 
     const tp1 = document.createElement('div'), tp2 = document.createElement('div'), tp3 = document.createElement('div'), tp4 = document.createElement('div');
-    tp1.innerHTML = '<img src="../src/img/chef1.jpg" alt="Employee">', tp2.innerHTML = '<img src="../src/img/chef1.jpg" alt="Employee">', tp3.innerHTML = '<img src="../src/img/chef1.jpg" alt="Employee">', tp4.innerHTML = '<img src="../src/img/chef1.jpg" alt="Employee">';
+    tp1.innerHTML = '<img src="../dist/img/chef1.jpg" alt="Employee">', tp2.innerHTML = '<img src="../dist/img/chef1.jpg" alt="Employee">', tp3.innerHTML = '<img src="../dist/img/chef1.jpg" alt="Employee">', tp4.innerHTML = '<img src="../dist/img/chef1.jpg" alt="Employee">';
     tp1.classList.add('team-pic'), tp2.classList.add('team-pic'), tp3.classList.add('team-pic'), tp4.classList.add('team-pic');
     tp2.setAttribute('id', 'tp2'), tp4.setAttribute('id', 'tp4');
 
