@@ -6,9 +6,6 @@ function menuSetup() {
 
     const main = document.createElement('div');
     main.classList.add('main');
-    const title = document.createElement('p');
-    title.classList.add('menu-titles');
-    main.appendChild(title);
     const m1 = document.createElement('div'), m2 = document.createElement('div'), m3 = document.createElement('div'), m4 = document.createElement('div'), m5 = document.createElement('div'), m6 = document.createElement('div');
     m1.classList.add('menu-img'), m2.classList.add('menu-img'), m3.classList.add('menu-img'), m4.classList.add('menu-img'), m5.classList.add('menu-img'), m6.classList.add('menu-img');
     m1.innerHTML = '<img src="../src/img/apps.jpg" alt="Appetizers">';
