@@ -1,4 +1,10 @@
 import '../dist/style.css';
+import Apps from './img/apps.jpg';
+import Entree from './img/entree.jpg';
+import Rolls from './img/rolls.jpg';
+import Special from './img/spc-rolls.jpg';
+import Combos from './img/combos.jpg';
+import Kids from './img/kids.jpg';
 
 function menuSetup() {
     const hero = document.createElement('div');
@@ -6,14 +12,20 @@ function menuSetup() {
 
     const main = document.createElement('div');
     main.classList.add('main');
-    const m1 = document.createElement('div'), m2 = document.createElement('div'), m3 = document.createElement('div'), m4 = document.createElement('div'), m5 = document.createElement('div'), m6 = document.createElement('div');
+    const m1 = document.createElement('img'), m2 = document.createElement('img'), m3 = document.createElement('img'), m4 = document.createElement('img'), m5 = document.createElement('img'), m6 = document.createElement('img');
     m1.classList.add('menu-img'), m2.classList.add('menu-img'), m3.classList.add('menu-img'), m4.classList.add('menu-img'), m5.classList.add('menu-img'), m6.classList.add('menu-img');
-    m1.innerHTML = '<img src="../dist/img/apps.jpg" alt="Appetizers">';
-    m2.innerHTML = '<img src="../dist/img/entree.jpg" alt="Entree Specials">';
-    m3.innerHTML = '<img src="../dist/img/rolls.jpg" alt="Classic Rolls">';
-    m4.innerHTML = '<img src="../dist/img/spc-rolls.jpg" alt="Special Rolls">';
-    m5.innerHTML = '<img src="../dist/img/combos.jpg" alt="Sushi Combos/Nigiri">';
-    m6.innerHTML = '<img src="../dist/img/kids.jpg" alt="Kids Menu/Desserts">';
+    m1.src = Apps;
+    m1.alt = 'Appetizers';
+    m2.src = Entree;
+    m2.alt = 'Entrees';
+    m3.src = Rolls;
+    m3.alt = 'Rolls';
+    m4.src = Special;
+    m4.alt = 'Special Rolls';
+    m5.src = Combos;
+    m5.alt = 'Combos and Nigiri';
+    m6.src = Kids;
+    m6.alt = 'Kids Menu and Desserts';
     main.append(m1, m2, m3, m4, m5, m6);
 
     hero.appendChild(main);

@@ -1,5 +1,5 @@
 import '../dist/style.css';
-import Chef from './img/chef1';
+import Chef from './img/chef1.jpg';
 
 function homeSetup() {
     const hero = document.createElement('div');
@@ -14,8 +14,6 @@ function homeSetup() {
 
     const p1 = document.createElement('div'), p2 = document.createElement('div'), p3 = document.createElement('div'), p4 = document.createElement('div');
     p1.classList.add('p1'), p2.classList.add('p1'), p3.classList.add('p1'), p4.classList.add('p1');
-    p2.setAttribute('id', 'person2');
-    p4.setAttribute('id', 'person4');
 
     const tm1 = document.createElement('p'), tm2 = document.createElement('p'), tm3 = document.createElement('p'), tm4 = document.createElement('p');
     tm1.textContent = 'Store Manager', tm2.textContent = 'Lead Chef', tm3.textContent = 'Sous Chef', tm4.textContent = 'Lead Server';
@@ -33,7 +31,6 @@ function homeSetup() {
     tp4.src = Chef; 
     tp4.alt='Employee image';
     tp1.classList.add('team-pic'), tp2.classList.add('team-pic'), tp3.classList.add('team-pic'), tp4.classList.add('team-pic');
-    tp2.setAttribute('id', 'tp2'), tp4.setAttribute('id', 'tp4');
 
     p1.append(tm1, tp1);
     p2.append(tm2, tp2);
