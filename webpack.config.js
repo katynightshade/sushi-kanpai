@@ -21,3 +21,5 @@ module.exports = {
         ],
     },
 };
+
+//issue with path after creating gh-pages subtree
