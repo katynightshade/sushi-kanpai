@@ -1,4 +1,5 @@
 import '../dist/style.css';
+import Chef from './img/chef1';
 
 function homeSetup() {
     const hero = document.createElement('div');
@@ -22,8 +23,15 @@ function homeSetup() {
     tm2.setAttribute('id', 'tm2'), tm4.setAttribute('id', 'tm4');
 
 
-    const tp1 = document.createElement('div'), tp2 = document.createElement('div'), tp3 = document.createElement('div'), tp4 = document.createElement('div');
-    tp1.innerHTML = '<img src="../dist/img/chef1.jpg" alt="Employee">', tp2.innerHTML = '<img src="../dist/img/chef1.jpg" alt="Employee">', tp3.innerHTML = '<img src="../dist/img/chef1.jpg" alt="Employee">', tp4.innerHTML = '<img src="../dist/img/chef1.jpg" alt="Employee">';
+    const tp1 = document.createElement('img'), tp2 = document.createElement('img'), tp3 = document.createElement('img'), tp4 = document.createElement('img');
+    tp1.src = Chef; 
+    tp1.alt= 'Employee image'; 
+    tp2.src = Chef; 
+    tp2.alt='Employee image'; 
+    tp3.src = Chef; 
+    tp3.alt='Employee image'; 
+    tp4.src = Chef; 
+    tp4.alt='Employee image';
     tp1.classList.add('team-pic'), tp2.classList.add('team-pic'), tp3.classList.add('team-pic'), tp4.classList.add('team-pic');
     tp2.setAttribute('id', 'tp2'), tp4.setAttribute('id', 'tp4');
 
