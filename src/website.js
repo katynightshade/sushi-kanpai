@@ -1,13 +1,15 @@
 import {home} from './home-page.js';
 import {menu} from './menu.js';
 import {contact} from './contact.js';
+import Logo from './img/logo.png';
 
 function createNav() {
     const header = document.createElement('div');
     header.classList.add('header');
 
-    const logo = document.createElement('div');
-    logo.innerHTML = '<img src="../src/img/logo.png" alt="Kanpai Home">'
+    const logo = document.createElement('img');
+    logo.src = Logo;
+    logo.alt = 'Sushi Kanpai';
     logo.classList.add('logo');    
     header.appendChild(logo);
 

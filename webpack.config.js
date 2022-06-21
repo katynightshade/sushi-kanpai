@@ -8,6 +8,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Sushi-Kanpai',
+            template: './src/index.html',
+            inject: 'body',
         }),
     ],
     output: {
@@ -27,5 +29,3 @@ module.exports = {
         ],
     },
 };
-
-//issue with path after creating gh-pages subtree
